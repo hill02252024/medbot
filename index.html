@@ -9,74 +9,72 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f5;
-            color: #333;
+            background-color: #0a0a23;
+            color: #ffffff;
         }
-        header {
-            background-color: #1a1a1a;
-            color: white;
-            padding: 20px 0;
+        .header {
+            background-color: #1e1e3f;
+            padding: 20px;
             text-align: center;
-            border-bottom: 5px solid #e0e0e0;
         }
-        h1 {
+        .header h1 {
             margin: 0;
-            font-size: 2.8em;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-size: 2.5em;
+            letter-spacing: 1px;
         }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .intro-text {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            color: #555;
-        }
-        .services {
-            font-size: 1.5em;
-            margin-bottom: 40px;
-            color: #444;
-        }
-        .image-container {
+        .section {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            margin-bottom: 40px;
+            margin: 20px 0;
         }
-        .image-container img {
-            max-width: 80%;
-            height: auto;
+        .card {
+            background-color: #1e1e3f;
+            width: 80%;
+            margin: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-        footer {
-            background-color: #1a1a1a;
-            color: white;
+        .card img {
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
+        }
+        .card-text {
+            font-size: 1.3em;
+        }
+        .footer {
+            background-color: #1e1e3f;
             text-align: center;
-            padding: 15px 0;
-            border-top: 5px solid #e0e0e0;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1>Innovative Automation Solutions</h1>
-    </header>
-    <div class="container">
-        <p class="intro-text">Welcome to our platform, where innovation meets efficiency. Discover our cutting-edge services designed to optimize your operations.</p>
-        <div class="services">
-            <p>Automation Systems | IoT Integration | AI Workforce</p>
+    </div>
+    <div class="section">
+        <div class="card">
+            <div class="card-text">CNC Automation System SINUMERIK</div>
+            <img src="https://www.efpg.com.tw/ftcfile/pic/editorupl/catalog/201807/Cont_1531824874224.jpg" alt="Arrow Image">
         </div>
-        <div class="image-container">
-            <img src="https://www.efpg.com.tw/ftcfile/pic/editorupl/catalog/201807/Cont_1531824874224.jpg" alt="Design Image">
+        <div class="card">
+            <div class="card-text">Process Control</div>
+            <img src="https://www.efpg.com.tw/ftcfile/pic/editorupl/catalog/201807/Cont_1531824874224.jpg" alt="Arrow Image">
         </div>
     </div>
-    <footer>
+    <div class="footer">
+        <p>With Totally Integrated Automation on the way to the Digital Enterprise</p>
+        <p>Thanks to the holistic approach and the triple potential</p>
         <p>&copy; 2025 Innovative Automation Solutions</p>
-    </footer>
+    </div>
 </body>
 </html>
